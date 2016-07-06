@@ -10,8 +10,8 @@ import Foundation
 import SpriteKit
 
 let NumberOfFish: Int = 32
-let StartingVelocity: CGFloat = 0.25
-let MaximumVelocity: CGFloat = 1.5
+let StartingSpeed: CGFloat = 0.25
+let MaximumSpeed: CGFloat = 1.5
 let ScreenMargin: CGFloat = -25
 
 class Fish: SKSpriteNode {
@@ -88,8 +88,8 @@ class Fish: SKSpriteNode {
     // it is under the limit, otherwise, keeps the direction and sets to limit.
     func clampVelocity() {
         let speed = velocity.length()
-        if speed > MaximumVelocity {
-            velocity = velocity.normalized() * MaximumVelocity
+        if speed > MaximumSpeed {
+            velocity = velocity.normalized() * MaximumSpeed
         }
     }
 }

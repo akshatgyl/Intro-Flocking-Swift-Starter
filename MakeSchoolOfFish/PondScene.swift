@@ -98,7 +98,7 @@ class PondScene: SKScene {
         fish.removeFromParent()
         fish.position = CGPoint(x: CGFloat.random(min: 0, max: size.width),
                                 y: CGFloat.random(min: 0, max: size.height))
-        fish.velocity = CGPoint(angle: CGFloat.random(min: 0, max: 2 * π)) * StartingVelocity
+        fish.velocity = CGPoint(angle: CGFloat.random(min: 0, max: 2 * π)) * StartingSpeed
         fish.delegate = self
         return fish
     }
@@ -115,10 +115,7 @@ class PondScene: SKScene {
             let speed = fish.velocity.length()
             
             if speed > 0.1 && frameCount % 3 == 0 {
-                let rotationValue = shortestAngleBetween(fish.velocity.angle + (π / 2), angle2: fish.zRotation).clamped(-π/4, π/4)
-                if abs(rotationValue) < π / 8 {
-                    continue
-                }
+                let rotationValue = shortestAngleBetween(fish.zRotation, angle2: fish.velocity.angle - (π / 2))
                 let rotate = SKAction.rotateByAngle(rotationValue, duration: 0.25)
                 fish.removeActionForKey("rotate")
                 fish.runAction(rotate, withKey: "rotate")
@@ -133,16 +130,16 @@ class PondScene: SKScene {
             if newPosition != fish.position {
                 if newPosition.x == ScreenMargin {
                     fish.position = CGPoint(x: ScreenMargin, y: fish.position.y)
-                    fish.velocity = CGPoint(angle: 0) * StartingVelocity
+                    fish.velocity = CGPoint(angle: 0) * StartingSpeed
                 } else if newPosition.x == size.width - ScreenMargin {
                     fish.position = CGPoint(x: size.width - ScreenMargin, y: fish.position.y)
-                    fish.velocity = CGPoint(angle: π) * StartingVelocity
+                    fish.velocity = CGPoint(angle: π) * StartingSpeed
                 } else if newPosition.y == ScreenMargin {
                     fish.position = CGPoint(x: fish.position.x, y: ScreenMargin)
-                    fish.velocity = CGPoint(angle: π/2) * StartingVelocity
+                    fish.velocity = CGPoint(angle: π/2) * StartingSpeed
                 } else {
                     fish.position = CGPoint(x: fish.position.x, y: size.height - ScreenMargin)
-                    fish.velocity = CGPoint(angle: -π/2) * StartingVelocity
+                    fish.velocity = CGPoint(angle: -π/2) * StartingSpeed
                 }
             }
         }
@@ -156,7 +153,7 @@ extension PondScene: FishDelegate {
             let distanceTo = fish.position.distanceTo(otherFish.position)
             if distanceTo < distance && otherFish !== fish {
                 positions.append(otherFish.position)
-                let requiredDistance: CGFloat = fish.seperationDistance
+                let requiredDistance: CGFloat = fish.separationDistance
                 if distanceTo < requiredDistance {
                     let angle = (otherFish.position - fish.position).angle
                     positions.append(fish.position + CGPoint(angle: angle) * requiredDistance)
