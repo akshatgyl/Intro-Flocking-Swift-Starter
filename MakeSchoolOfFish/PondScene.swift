@@ -189,8 +189,8 @@ extension PondScene: FishDelegate {
 }
 
 protocol FishDelegate {
-    func fishPositions(within x: CGFloat, of fish: Fish) -> [CGPoint]
-    func fishVelocities(within x: CGFloat, of fish: Fish) -> [CGPoint]
+    func fishPositions(within distance: CGFloat, of fish: Fish) -> [CGPoint]
+    func fishVelocities(within distance: CGFloat, of fish: Fish) -> [CGPoint]
     func foodLocation() -> CGPoint?
     func rippleLocation() -> CGPoint?
 }
