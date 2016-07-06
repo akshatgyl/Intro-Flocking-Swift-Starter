@@ -23,9 +23,9 @@ class Fish: SKSpriteNode {
     let cohesionVisibleDistance: CGFloat = 160
     let cohesionWeight: CGFloat = 1000
     
-    // Seperation Constants
-    let seperationDistance: CGFloat = 60
-    let seperationWeight: CGFloat = 200
+    // Separation Constants
+    let separationDistance: CGFloat = 60
+    let separationWeight: CGFloat = 200
     
     // Alignment Constants
     let alignmentVisibleDistance: CGFloat = 160
@@ -45,8 +45,8 @@ class Fish: SKSpriteNode {
         return CGPoint(x: 0, y: 0)
     }
     
-    // Keep fish seperated so they do not overlap
-    func calculateSeperation() -> CGPoint {
+    // Keep fish separated so they do not overlap
+    func calculateSeparation() -> CGPoint {
         // TODO: Implement this!
         return CGPoint(x: 0, y: 0)
     }
