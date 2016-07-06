@@ -358,7 +358,7 @@
 		BC668D7C1D2398C100C180C0 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		BC668D7D1D2398C100C180C0 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		BC668D7E1D2398C100C180C0 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
-		BCA010B71D2387DB0016AD85 /* MakeSchoolOfFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSchoolOfFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA010B71D2387DB0016AD85 /* FishSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA010BA1D2387DB0016AD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA010BE1D2387DB0016AD85 /* PondScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondScene.swift; sourceTree = "<group>"; };
 		BCA010C01D2387DB0016AD85 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -633,7 +633,7 @@
 		BCA010B81D2387DB0016AD85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BCA010B71D2387DB0016AD85 /* MakeSchoolOfFish.app */,
+				BCA010B71D2387DB0016AD85 /* FishSim.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -666,7 +666,7 @@
 			);
 			name = MakeSchoolOfFish;
 			productName = MakeSchoolOfFish;
-			productReference = BCA010B71D2387DB0016AD85 /* MakeSchoolOfFish.app */;
+			productReference = BCA010B71D2387DB0016AD85 /* FishSim.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1012,7 +1012,7 @@
 				INFOPLIST_FILE = MakeSchoolOfFish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolOfFish;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FishSim;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -1026,7 +1026,7 @@
 				INFOPLIST_FILE = MakeSchoolOfFish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolOfFish;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FishSim;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
