@@ -46,11 +46,11 @@ class Fish: SKSpriteNode {
         return cohesion / cohesionWeight
     }
     
-    // Keep fish seperated so they do not overlap
-    func calculateSeperation() -> CGPoint {
+    // Keep fish separated so they do not overlap
+    func calculateSeparation() -> CGPoint {
         let closeFishPositions = delegate.fishPositions(within: separationDistance, of: self)
-        let seperation = vectorToCenterPoint(of: closeFishPositions) * -1
-        return seperation / separationWeight
+        let separation = vectorToCenterPoint(of: closeFishPositions) * -1
+        return separation / separationWeight
     }
     
     // Create a "hive mind" by mimicking nearby fish
@@ -82,7 +82,7 @@ class Fish: SKSpriteNode {
     
     func updateVelocity() {
         let cohesion = calculateCohension()
-        let seperation = calculateSeperation()
+        let separation = calculateSeparation()
         let alignment = calculateAlignment()
         let food = calculateFood()
         let ripple = calculateRipple()
