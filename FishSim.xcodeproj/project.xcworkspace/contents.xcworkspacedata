@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MakeSchoolOfFish.xcodeproj">
+      location = "self:/Users/akshatgoyal/Desktop/Intro-Flocking-Swift-Starter/FishSim.xcodeproj">
    </FileRef>
 </Workspace>

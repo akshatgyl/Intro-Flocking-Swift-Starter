@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  MakeSchoolOfFish
+//  FishSim
 //
 //  Created by Dion Larson on 6/28/16.
 //  Copyright (c) 2016 Make School. All rights reserved.

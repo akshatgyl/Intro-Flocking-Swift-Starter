@@ -625,7 +625,7 @@
 		BCA010AE1D2387DB0016AD85 = {
 			isa = PBXGroup;
 			children = (
-				BCA010B91D2387DB0016AD85 /* MakeSchoolOfFish */,
+				BCA010B91D2387DB0016AD85 /* FishSim */,
 				BCA010B81D2387DB0016AD85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -638,7 +638,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BCA010B91D2387DB0016AD85 /* MakeSchoolOfFish */ = {
+		BCA010B91D2387DB0016AD85 /* FishSim */ = {
 			isa = PBXGroup;
 			children = (
 				BC499C451D23943000D656D0 /* Fish.swift */,
@@ -646,15 +646,16 @@
 				BC408C971D2CAD5D00D47CED /* Resources */,
 				BC668D711D2398C100C180C0 /* SKTUtils */,
 			);
+			name = FishSim;
 			path = MakeSchoolOfFish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BCA010B61D2387DB0016AD85 /* MakeSchoolOfFish */ = {
+		BCA010B61D2387DB0016AD85 /* FishSIm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCA010CD1D2387DB0016AD85 /* Build configuration list for PBXNativeTarget "MakeSchoolOfFish" */;
+			buildConfigurationList = BCA010CD1D2387DB0016AD85 /* Build configuration list for PBXNativeTarget "FishSIm" */;
 			buildPhases = (
 				BCA010B31D2387DB0016AD85 /* Sources */,
 				BCA010B41D2387DB0016AD85 /* Frameworks */,
@@ -664,7 +665,7 @@
 			);
 			dependencies = (
 			);
-			name = MakeSchoolOfFish;
+			name = FishSIm;
 			productName = MakeSchoolOfFish;
 			productReference = BCA010B71D2387DB0016AD85 /* FishSim.app */;
 			productType = "com.apple.product-type.application";
@@ -685,7 +686,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BCA010B21D2387DB0016AD85 /* Build configuration list for PBXProject "MakeSchoolOfFish" */;
+			buildConfigurationList = BCA010B21D2387DB0016AD85 /* Build configuration list for PBXProject "FishSim" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -698,7 +699,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCA010B61D2387DB0016AD85 /* MakeSchoolOfFish */,
+				BCA010B61D2387DB0016AD85 /* FishSIm */,
 			);
 		};
 /* End PBXProject section */
@@ -1034,7 +1035,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BCA010B21D2387DB0016AD85 /* Build configuration list for PBXProject "MakeSchoolOfFish" */ = {
+		BCA010B21D2387DB0016AD85 /* Build configuration list for PBXProject "FishSim" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCA010CB1D2387DB0016AD85 /* Debug */,
@@ -1043,7 +1044,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCA010CD1D2387DB0016AD85 /* Build configuration list for PBXNativeTarget "MakeSchoolOfFish" */ = {
+		BCA010CD1D2387DB0016AD85 /* Build configuration list for PBXNativeTarget "FishSIm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BCA010CE1D2387DB0016AD85 /* Debug */,
